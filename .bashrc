@@ -11,12 +11,5 @@ if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
 fi
 export PATH
 
-# Load aliases, paths, etc.
-if [ -d "$XDG_CONFIG_BASE/bash" ]; then
-    for rc in "$XDG_CONFIG_BASE/bash/*"; do
-        if [ -f "$rc" ]; then
-            . "$rc"
-        fi
-    done
-fi
-unset rc
+# Load aliases
+source "$XDG_CONFIG_HOME/bash/aliases"

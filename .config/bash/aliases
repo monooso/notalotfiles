@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+# General
+alias c="clear"
+alias l="ls -al"
+alias ..="cd .."
+alias ...="cd ../.."
+
